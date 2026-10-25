@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Individual JS Tasks - Aruzhan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>JavaScript Individual Tasks</h1>
-    <p>Open the browser Console to see the results of the tasks.</p>
-    <script src="script.js"></script>
+    <main class="practice-container">
+    <h1>Part 2 — Individual Tasks</h1>
+
+    <section class="task-card" id="task-6">
+        <h2>Task 6: Counter with Click Events</h2>
+        <p>Current Count: <span id="counter-value" class="counter-display">0</span></p>
+        <div class="controls">
+            <button id="btn-increase" class="btn">Increase (+)</button>
+            <button id="btn-decrease" class="btn">Decrease (-)</button>
+            <button id="btn-reset" class="btn">Reset</button>
+        </div>
+    </section>
+
+    <section class="task-card" id="task-7">
+        <h2>Task 7: Live Text Preview</h2>
+        <div class="form-group">
+            <label for="live-input">Type your text:</label>
+            <input type="text" id="live-input" class="input-field" placeholder="Type something here...">
+        </div>
+        <p>Character count: <strong id="char-count">0</strong></p>
+        <div id="live-preview" class="preview-box">Your text will appear here</div>
+        <div class="controls">
+            <button id="btn-clear" class="btn">Clear</button>
+        </div>
+    </section>
+
+    <section class="task-card" id="task-8">
+        <h2>Task 8: Image Switcher via Select</h2>
+        <div class="form-group">
+            <label for="image-select">Choose an option:</label>
+            <select id="image-select" class="select-field">
+                <option value="item1">Option 1: Gaming Setup</option>
+                <option value="item2">Option 2: Code Editor</option>
+                <option value="item3">Option 3: Abstract Art</option>
+            </select>
+        </div>
+        <div class="image-preview-container">
+            <img id="preview-img" src="images/gaming_setup.jpg" alt="Gaming Setup showcase">
+            <p id="image-caption" class="image-caption">Option 1 — Clean modern workstation and gaming setup.</p>
+        </div>
+    </section>
+
+    <section class="task-card" id="task-9">
+        <h2>Task 9: Keyboard Events</h2>
+        <div class="form-group">
+            <label for="key-input">Interactive Key Handler:</label>
+            <input type="text" id="key-input" class="input-field" placeholder="Press keys while focused...">
+        </div>
+        <p id="key-status">Last pressed key: <em>None</em></p>
+        <p>Result on Enter: <strong id="key-result">N/A</strong></p>
+    </section>
+
+    <section class="task-card" id="task-10">
+        <h2>Task 10: Mouse and Focus Events</h2>
+        <div id="focusable-card" class="interactive-card" tabindex="0">
+            <h3>Interactive Card</h3>
+            <p id="card-instruction">Hover over or focus this card to trigger events.</p>
+        </div>
+        <p>Event tracker: <span id="event-tracker">No event triggered yet.</span></p>
+    </section>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
